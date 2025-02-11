@@ -4,11 +4,13 @@
  * It is used to get the historical changes to the eCFR.
  */
 const express = require('express')
+const cors = require('cors')
 const { fetchECFRData } = require('./ecfr-api')
 const app = express()
 const port = 3000
 
 app.use(express.json())
+app.use(cors('*'))
 
 // Endpoint to get agency information and their CFR references
 app.get('/api/agencies', async (req, res) => {
