@@ -89,8 +89,14 @@ API for processing responses from the ECFR API and further doing analysis on the
       }
     ],
     ...
-    
+
 ```
+
+## Future Work
+
+- Add more analysis on the data such as word count, sentence count, etc.
+- Add implementation for an LLM to do further analysis on the data.
+- Add the search API endpoint for ECFR
 
 ## Running the project
 
